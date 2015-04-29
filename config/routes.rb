@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :users, only: [:new, :create, :edit, :update]
+  #patch 'user/:id' => 'user#new', as: :user
+  #get 'user/:id' => 'user#new', as: :user
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
